@@ -1,4 +1,4 @@
-### Mario GAN: Generative Level Design for Mario Bros
+## Mario GAN: Generative Level Design for Mario Bros
 
 A Generative Adversarial Network (GAN) model designed to procedurally generate Super Mario Bros. levels. This model leverages sequential GANs to create cohesive and engaging level layouts with continuous and playable segments.
 
