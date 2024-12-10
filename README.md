@@ -10,6 +10,6 @@ In the dataset folder there is a test dataset extracted from the Video Game Leve
 
 * [X] Make our own dataset
 * [X] Create model architecture
-* [] Train model with own dataset
-* [] Create inference function with the sequential results
-* [] Add playable/pathfinder enviorioment 
+* [ ] Train model with own dataset
+* [ ] Create inference function with the sequential results
+* [ ] Add playable/pathfinder enviorioment 
