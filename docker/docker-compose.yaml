@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mario_gan:
+    container_name: mario_gan
+    image: us-docker.pkg.dev/colab-images/public/runtime
+    command: >
+      jupyter notebook --ip=0.0.0.0 --port=8181 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+    entrypoint: ""
+    tty: true
+    privileged: true
+    network_mode: "host"
+    runtime: nvidia
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+      - ../:/mario_gan
+      - /etc/localtime:/etc/localtime:ro
+    working_dir: /mario_gan
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=/tmp/.docker.xauth
